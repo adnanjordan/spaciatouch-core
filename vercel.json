@@ -1,9 +1,19 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/dist/client/$1"
+      "src": "dist/server/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "dist/client/assets/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "dist/server/index.js"
     }
   ]
 }
