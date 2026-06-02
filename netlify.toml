@@ -1,7 +1,0 @@
-[build]
-  base = "spaciatouch-core-main"
-  command = "bun run build"
-  publish = ".output/public"
-
-[[plugins]]
-  package = "@netlify/plugin-edge-functions`
