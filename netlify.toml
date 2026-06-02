@@ -1,2 +1,4 @@
 [build]
+  base = "spaciatouch-core-main"
+  command = "bun run build"
   publish = ".output/public"
